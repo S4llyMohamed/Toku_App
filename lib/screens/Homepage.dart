@@ -1,5 +1,9 @@
 //import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:toku/screens/Numbers_page.dart';
+import 'package:toku/screens/colors_page.dart';
+import 'package:toku/screens/family_members_page.dart';
+import 'package:toku/screens/phrases.dart';
 import 'package:toku/widgets/Category.dart';
 
 class Homepage extends StatelessWidget {
@@ -18,20 +22,60 @@ class Homepage extends StatelessWidget {
       body: Column(
         children: [
           Category(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return Numbers();
+                  },
+                ),
+              );
+            },
             text: "Number",
             color: Color(
               0XFF81DAE3,
             ),
           ),
           Category(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return FamilyMembers();
+                  },
+                ),
+              );
+            },
             text: "Family members",
             color: Color(0XFF95CD41),
           ),
           Category(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return Colors_page();
+                  },
+                ),
+              );
+            },
             text: "colors",
             color: Color(0XFFEF5A6F),
           ),
           Category(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return phrases();
+                  },
+                ),
+              );
+            },
             text: "Phrases",
             color: Color(0XFF81DAE3),
           ),
