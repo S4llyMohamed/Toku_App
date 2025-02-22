@@ -12,7 +12,7 @@ class Category extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: onTap,
       child: Container(
         padding: EdgeInsets.only(left: 20),
         alignment: Alignment.centerLeft,

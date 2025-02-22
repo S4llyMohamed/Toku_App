@@ -4,7 +4,7 @@ import 'package:toku/screens/Numbers_page.dart';
 import 'package:toku/screens/colors_page.dart';
 import 'package:toku/screens/family_members_page.dart';
 import 'package:toku/screens/phrases.dart';
-import 'package:toku/widgets/Category.dart';
+import 'package:toku/models/Category.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -25,16 +25,12 @@ class Homepage extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(
-                  builder: (context) {
-                    return Numbers();
-                  },
-                ),
+                MaterialPageRoute(builder: (context) => Numbers()),
               );
             },
-            text: "Number",
+            text: "Numbers",
             color: Color(
-              0XFF81DAE3,
+              0XFFFFE459,
             ),
           ),
           Category(
