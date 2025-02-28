@@ -7,11 +7,12 @@ class Category extends StatelessWidget {
 
   String? text;
   Color? color;
-  VoidCallback? onTap;
+  VoidCallback? onTap; // function
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
+      //
       onTap: onTap,
       child: Container(
         padding: EdgeInsets.only(left: 20),
