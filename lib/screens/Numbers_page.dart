@@ -82,7 +82,12 @@ class Numbers extends StatelessWidget {
       body: ListView.builder(
           itemCount: number_list.length,
           itemBuilder: (context, i) {
-            return item(num_item: number_list[i]);
+            return item(
+              itemColor: Color(
+                0XFFFFE459,
+              ),
+              num_item: number_list[i],
+            );
           }),
     );
   }

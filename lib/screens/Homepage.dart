@@ -38,9 +38,7 @@ class Homepage extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) {
-                    return FamilyMembers();
-                  },
+                  builder: (context) => FamilyMembers(),
                 ),
               );
             },
@@ -52,9 +50,7 @@ class Homepage extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) {
-                    return Colors_page();
-                  },
+                  builder: (context) => ColorsPage(),
                 ),
               );
             },
@@ -66,9 +62,7 @@ class Homepage extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) {
-                    return phrases();
-                  },
+                  builder: (context) => PhrasesPage(),
                 ),
               );
             },

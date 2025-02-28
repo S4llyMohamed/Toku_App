@@ -3,15 +3,14 @@ import 'package:toku/models/numberClass.dart';
 import 'package:audioplayers/audioplayers.dart';
 
 class item extends StatelessWidget {
-  const item({super.key, required this.num_item});
+  const item({super.key, required this.num_item, required this.itemColor});
   final numbers_class num_item;
+  final Color itemColor;
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 60,
-      color: Color(
-        0XFFFFE459,
-      ),
+      color: itemColor,
       child: Row(
         children: [
           Container(
