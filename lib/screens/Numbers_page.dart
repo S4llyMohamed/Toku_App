@@ -87,6 +87,7 @@ class Numbers extends StatelessWidget {
                 0XFFFFE459,
               ),
               num_item: number_list[i],
+              colorBox: Colors.white,
             );
           }),
     );

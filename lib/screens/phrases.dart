@@ -82,7 +82,11 @@ class PhrasesPage extends StatelessWidget {
       body: ListView.builder(
           itemCount: number_list.length,
           itemBuilder: (context, i) {
-            return item(itemColor: Color(0XFF81DAE3), num_item: number_list[i]);
+            return item(
+              itemColor: Color(0XFF81DAE3),
+              num_item: number_list[i],
+              colorBox: Colors.white,
+            );
           }),
     );
   }

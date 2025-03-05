@@ -13,7 +13,7 @@ class FamilyMembers extends StatelessWidget {
     ),
     numbers_class(
       image: "assets/images/family_members/family_mother.png",
-      ennum: "Haha",
+      ennum: "Mother",
       jpnum: "Haha",
       sound: "sounds/family_members/mother.wav",
     ),
@@ -82,7 +82,11 @@ class FamilyMembers extends StatelessWidget {
       body: ListView.builder(
           itemCount: number_list.length,
           itemBuilder: (context, i) {
-            return item(itemColor: Color(0XFF95CD41), num_item: number_list[i]);
+            return item(
+              itemColor: Color(0XFF95CD41),
+              num_item: number_list[i],
+              colorBox: Colors.white,
+            );
           }),
     );
   }

@@ -3,9 +3,14 @@ import 'package:toku/models/numberClass.dart';
 import 'package:audioplayers/audioplayers.dart';
 
 class item extends StatelessWidget {
-  const item({super.key, required this.num_item, required this.itemColor});
+  const item(
+      {super.key,
+      required this.num_item,
+      required this.itemColor,
+      required this.colorBox});
   final numbers_class num_item;
   final Color itemColor;
+  final Color colorBox;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -14,7 +19,7 @@ class item extends StatelessWidget {
       child: Row(
         children: [
           Container(
-            color: Colors.white,
+            color: colorBox,
             child: Image.asset(num_item.image),
           ),
           Padding(

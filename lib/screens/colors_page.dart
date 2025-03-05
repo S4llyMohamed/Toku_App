@@ -6,64 +6,52 @@ class ColorsPage extends StatelessWidget {
   ColorsPage({super.key});
   List<numbers_class> number_list = [
     numbers_class(
-      image: "assets/images/numbers/number_one.png",
-      ennum: "One",
-      jpnum: "ichi",
-      sound: "sounds/numbers/number_one_sound.mp3",
+      image: "assets/images/colors/color_black.png",
+      ennum: "Black",
+      jpnum: "Burakku",
+      sound: "sounds/colors/black.wav",
     ),
     numbers_class(
-      image: "assets/images/numbers/number_two.png",
-      ennum: "Two",
-      jpnum: "Ni",
-      sound: "sounds/numbers/number_two_sound.mp3",
+      image: "assets/images/colors/color_brown.png",
+      ennum: "Brown",
+      jpnum: "Chairo",
+      sound: "sounds/colors/brown.wav",
     ),
     numbers_class(
-      image: "assets/images/numbers/number_three.png",
-      ennum: "Three",
-      jpnum: "San",
-      sound: "sounds/numbers/number_three_sound.mp3",
+      image: "assets/images/colors/color_dusty_yellow.png",
+      ennum: "Dusty yellow",
+      jpnum: "Kusunda kiiro",
+      sound: "sounds/colors/dusty_yellow.wav",
     ),
     numbers_class(
-      image: "assets/images/numbers/number_four.png",
-      ennum: "Four",
-      jpnum: "Shi",
-      sound: "sounds/numbers/number_four_sound.mp3",
+      image: "assets/images/colors/color_gray.png",
+      ennum: "Gray",
+      jpnum: "Gurei",
+      sound: "sounds/colors/gray.wav",
     ),
     numbers_class(
-      image: "assets/images/numbers/number_five.png",
-      ennum: "Five",
-      jpnum: "Go",
-      sound: "sounds/numbers/number_five_sound.mp3",
+      image: "assets/images/colors/color_green.png",
+      ennum: "Green",
+      jpnum: "Midori",
+      sound: "sounds/colors/green.wav",
     ),
     numbers_class(
-      image: "assets/images/numbers/number_six.png",
-      ennum: "Six",
-      jpnum: "Roku",
-      sound: "sounds/numbers/number_six_sound.mp3",
+      image: "assets/images/colors/color_red.png",
+      ennum: "Red",
+      jpnum: "Aka",
+      sound: "sounds/colors/red.wav",
     ),
     numbers_class(
-      image: "assets/images/numbers/number_seven.png",
-      ennum: "seven",
-      jpnum: "sebun",
-      sound: "sounds/numbers/number_seven_sound.mp3",
+      image: "assets/images/colors/color_white.png",
+      ennum: "White",
+      jpnum: "Shiro",
+      sound: "sounds/colors/white.wav",
     ),
     numbers_class(
-      image: "assets/images/numbers/number_eight.png",
-      ennum: "Eight",
-      jpnum: "Hachi",
-      sound: "sounds/numbers/number_eight_sound.mp3",
-    ),
-    numbers_class(
-      image: "assets/images/numbers/number_nine.png",
-      ennum: "Nine",
-      jpnum: "Kyu",
-      sound: "sounds/numbers/number_nine_sound.mp3",
-    ),
-    numbers_class(
-      image: "assets/images/numbers/number_ten.png",
-      ennum: "Ten",
-      jpnum: "Ju",
-      sound: "sounds/numbers/number_ten_sound.mp3",
+      image: "assets/images/colors/yellow.png",
+      ennum: "Yellow",
+      jpnum: "Kiiro",
+      sound: "sounds/colors/yellow.wav",
     ),
   ];
 
@@ -82,7 +70,11 @@ class ColorsPage extends StatelessWidget {
       body: ListView.builder(
           itemCount: number_list.length,
           itemBuilder: (context, i) {
-            return item(itemColor: Color(0XFFEF5A6F), num_item: number_list[i]);
+            return item(
+              itemColor: Color(0XFFEF5A6F),
+              num_item: number_list[i],
+              colorBox: Color(0xFFFFC4C4),
+            );
           }),
     );
   }
